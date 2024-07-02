@@ -13,7 +13,7 @@ export default function Player({initialName,symbol ,isActive,onChangeName}){
  
   }
   let button_content = 'Edit'
-  let editablePlayerName = <span className = "player-name">{playerName}</span>
+  let editablePlayerName = <span className = "Player-name">{playerName}</span>
   if(isEditing){
     editablePlayerName = <input type="text" required defaultValue = {playerName} onChange={handleChange}/>
     button_content = 'Save';
